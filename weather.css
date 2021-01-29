@@ -49,16 +49,35 @@ header{
     width: 5000px;
 }
 
-h2 {
-        color: gray;
-        word-spacing: 48px;
-        font-size: 14px;
+#nav-bar{
+    margin: 5px 0px 30px 0px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-item {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
         font-weight: lighter;
-        position: relative;
-        left: 10px;
-        width:1200px;
     }
 
+li a{
+    text-decoration: none;
+    border-bottom: 2px, solid, darkgray;
+}
+
+.nav-item span{
+    color:  gray;
+}
+
+.nav-item span:hover{
+    color: black;
+}
 
 #cloud svg {
     height: 25px;
