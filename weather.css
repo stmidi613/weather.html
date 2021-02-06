@@ -50,20 +50,26 @@ header{
 }
 
 #nav-bar{
+    position: relative;
+    left: 20px;
     margin: 5px 0px 30px 0px;
+    padding: 3px 0px 10px 0px;
+    border-bottom: 1px solid darkgray !important;
 }
 
 .nav-bar{
-    display: flex;
-    flex-direction: row;
+    display: inline;
     justify-content: space-around;
     list-style-type: none;
 }
 
 .nav-item {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: lighter;
+        display: inline;
+        padding: 5px 40px 0px 0px;
+        text-transform: uppercase;
     }
 
 li a{
@@ -170,7 +176,7 @@ sub{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.current p #details{
+current p #details{
     text-align: right;
 }
 
