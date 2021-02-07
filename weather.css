@@ -100,14 +100,14 @@ li a{
      stroke-linejoin: round;
 }
 
-#cloud2 svg{
+.cloud2 svg{
         height: 80px;
         width: 80px;
         position: relative;
         top: 10px;
         left: 20px;
     }
-#cloud2 svg path {
+.cloud2 svg path {
         fill: white;
         stroke: gray;
         stroke-width: 2;
@@ -144,24 +144,31 @@ input{
     line-height: 0px;
 }
 
-.current p:nth-of-type(2){
+.current .temp{
     text-align: center;
     font-size: 85px;
 }
 
-.current p:nth-last-child(3){
+.current .real{
     text-align: center;
     position: relative;
     bottom: 60px;
     left: 50px;
 }
 
-.current p:nth-last-child(2){
+.bottom{
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+}
+
+#description{
     position: relative;
     bottom: 20px;
 }
 
-.current p:last-child{
+.current #details{
     position: relative;
     bottom: 40px;
     text-align: right;
@@ -176,8 +183,8 @@ sub{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-current p #details{
-    text-align: right;
+.description{
+    display: flex;
 }
 
 .minute{
@@ -190,6 +197,7 @@ current p #details{
     position: relative;
     bottom: 30px;
 }
+
 .air h3{
         border-bottom: 2px solid lightgray;
     }
