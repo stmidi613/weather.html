@@ -132,8 +132,8 @@ input{
     margin: none;
 }
 
-.container{
-    margin: 5px;
+.container .current{
+    margin: 10px !important;
 }
 
 .current{
@@ -185,9 +185,11 @@ sub{
 
 .description{
     display: flex;
+
 }
 
 .minute{
+    margin: 10px;
     font-style: Tahoma;
     color: white;
     background-color: blue;
@@ -200,15 +202,13 @@ sub{
 
 .air h3{
         border-bottom: 2px solid lightgray;
+        padding: 5px;
     }
 
-.air h3, .air div{
-    padding: 20px;
-}
+
 .air{
+    margin: 10px !important;
     background-color: white;
-    /*border: 50px solid white;
-    padding: 20px;*/
 }
 
 .categories label{
