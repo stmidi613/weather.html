@@ -189,7 +189,7 @@ sub{
 }
 
 .minute{
-    margin: 10px;
+    margin: 0px 10px;
     font-style: Tahoma;
     color: white;
     background-color: blue;
@@ -202,7 +202,7 @@ sub{
 
 .air h3{
         border-bottom: 2px solid lightgray;
-        padding: 5px;
+        padding: 10px;
     }
 
 
@@ -251,8 +251,24 @@ sub{
     line-height: 0px;
 }
 
-
-hr{
-    position: relative;
-    left: 10px;
+.sidebar{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    justify-content: center !important;
+    
 }
+
+.sidebar-box, #more, .featured, #border, #border-pod{
+    border-top: 1px solid lightgray;
+}
+
+.sidebar-boxes{
+    background-color: white;
+    justify-content: horizontal;
+}
+
+.sidebar-boxes *{
+   padding: 5px;
+}
+
