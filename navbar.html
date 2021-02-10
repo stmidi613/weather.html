@@ -69,9 +69,9 @@
         <h3>CURRENT AIR QUALITY</h3>
         <div class="air">
             <h4>Excellent</h4>
-            <p>The air qulity is ideal for most individuals; enjoy your normal
+            <p class="air">The air qulity is ideal for most individuals; enjoy your normal
             outdoor activities.</p>
-            <p><span id="based">Based on Current Pollutants</span></p>
+            <p id="based">Based on Current Pollutants</p>
         </div>
     </div>
 </section>
@@ -135,13 +135,13 @@
 </div class="container"><!-- This is the end of div container-->
 <br>
 <div class="categories">
-    <label>Further Ahead</label>
+    <label class="label">Further Ahead</label>
     <ul>
         <li>HOURLY</li>
         <li>DAILY</li>
         <li>MONTHLY</li>      
     </ul>
-    <label>Around the Globe</label>
+    <label class="label">Around the Globe</label>
     <ul>
         <li>CORONAVIRUS TRACKER</li>
         <li>WINTER CENTER</li>
@@ -156,27 +156,38 @@
 <div class="sidebar">
     <div class="sidebar-boxes">
         <h1 class="stories">Top Stories</h1>
-            <h2 class="sidebar-box">Winter Weather</h2>
+            <div class="sidebar-group">
+                <p class="sidebar-box">Winter Weather</p>
                 <p class="sidebar-info">Another foot of snow on the way for NYC?</p>
                 <p class="time-info">15 hours ago</p>
-            <h2 class="sidebar-box">Winter Weather</h2>
+            </div>
+            <div class="sidebar-group">
+                <p class="sidebar-box">Winter Weather</p>
                 <p class="sidebar-info">Parade of winter storms to persist in Midwest, Northeast</p>
                 <p class="time-info">2 hours ago</p>
-            <h2 class="sidebar-box">Winter Weather</h2>
+            </div>
+            <div class="sidebar-group">
+                <p class="sidebar-box">Winter Weather</p>
                 <p class="sidebar-info">Woman, 29, among 4 killded in Utah avalanche</p>
                 <p class="time-info">12 hours ago</p>
+            </div>
             <!--No header for this section-->
+            <div class="sidebar-group">
                 <p class="sidebar-info" id="border">Plumbers embrace for influx of calls as temps drop</p>
                 <p class="time-info">16 hours ago</p>
+            </div>
             <!--No header for this section-->
+            <div class="sidebar-group">
                 <p class="sidebar-info" id="border-pod">Podcast: Snow and cold continue this week</p>
-            <h2 id="more">More stories</h2>
+                <p id="more">More stories</p>
+            </div>
     </div>
+    <br>
     <div class="sidebar-boxes"> 
         <h1 class="stories">Featured Stories</h1>
-            <p class="featured">Warm their heart with these five Valentine's Day gift ideas</p> 
-            <p class="featured">How cooking spray and socks can make shoveling snow easier</p>
-            <p class="featured">AccuWeather School:  Wet bulb temperature?  Nope, nothing to do with flo...</p>
+            <p class="sidebar-group" class="featured">Warm their heart with these five Valentine's Day gift ideas</p> 
+            <p class="sidebar-group" class="featured">How cooking spray and socks can make shoveling snow easier</p>
+            <p class="sidebar-group" class="featured">AccuWeather School:  Wet bulb temperature?  Nope, nothing to do with flo...</p>
     </div>
 </div>
 </body>
