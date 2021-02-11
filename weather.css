@@ -268,7 +268,57 @@ sub{
     margin: 0px;
 }
 
-.sidebar-group, .stories{
-    padding: 5px;
+.sidebar-group, .stories, #border-bottom{
     border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+
+.stories{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 12px;
+}
+
+.sidebar-box{
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+.sidebar-info{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.25 !important;
+}
+
+.time-info{
+    font-size: 12px;
+    color: gray;
+    padding-bottom: 12px;
+}
+
+#border, #border-pod{
+    padding-top: 12px;
+}
+
+#border-pod{
+    padding-bottom: 12px;
+}
+
+#more{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.featured{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid lightgray;
+    padding: 12px 16px;
 }
