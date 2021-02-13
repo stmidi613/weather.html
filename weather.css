@@ -50,20 +50,26 @@ header{
 }
 
 #nav-bar{
+    position: relative;
+    left: 20px;
     margin: 5px 0px 30px 0px;
+    padding: 3px 0px 10px 0px;
+    border-bottom: 1px solid darkgray !important;
 }
 
 .nav-bar{
-    display: flex;
-    flex-direction: row;
+    display: inline;
     justify-content: space-around;
     list-style-type: none;
 }
 
 .nav-item {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: lighter;
+        display: inline;
+        padding: 5px 40px 0px 0px;
+        text-transform: uppercase;
     }
 
 li a{
@@ -94,14 +100,14 @@ li a{
      stroke-linejoin: round;
 }
 
-#cloud2 svg{
+.cloud2 svg{
         height: 80px;
         width: 80px;
         position: relative;
         top: 10px;
         left: 20px;
     }
-#cloud2 svg path {
+.cloud2 svg path {
         fill: white;
         stroke: gray;
         stroke-width: 2;
@@ -126,8 +132,8 @@ input{
     margin: none;
 }
 
-.container{
-    margin: 5px;
+.container .current{
+    margin: 10px !important;
 }
 
 .current{
@@ -138,24 +144,31 @@ input{
     line-height: 0px;
 }
 
-.current p:nth-of-type(2){
+.current .temp{
     text-align: center;
     font-size: 85px;
 }
 
-.current p:nth-last-child(3){
+.current .real{
     text-align: center;
     position: relative;
     bottom: 60px;
     left: 50px;
 }
 
-.current p:nth-last-child(2){
+.bottom{
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+}
+
+#description{
     position: relative;
     bottom: 20px;
 }
 
-.current p:last-child{
+.current #details{
     position: relative;
     bottom: 40px;
     text-align: right;
@@ -170,11 +183,13 @@ sub{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.current p #details{
-    text-align: right;
+.description{
+    display: flex;
+
 }
 
 .minute{
+    margin: 0px 10px;
     font-style: Tahoma;
     color: white;
     background-color: blue;
@@ -184,21 +199,21 @@ sub{
     position: relative;
     bottom: 30px;
 }
+
 .air h3{
         border-bottom: 2px solid lightgray;
     }
 
-.air h3, .air div{
-    padding: 20px;
-}
+
 .air{
+    margin: 10px;
+    padding: 10px;
     background-color: white;
-    /*border: 50px solid white;
-    padding: 20px;*/
 }
 
-.categories label{
-    font-size: 10;
+.categories .label{
+    text-transform: uppercase;
+    font-size: 12;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     top: 10px;
@@ -237,8 +252,73 @@ sub{
     line-height: 0px;
 }
 
+.sidebar{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    justify-content: center;    
+}
 
-hr{
-    position: relative;
-    left: 10px;
+.sidebar-boxes{
+    background-color: white;
+}
+
+.sidebar-boxes *{
+    padding: 0px 5px;
+    margin: 0px;
+}
+
+.sidebar-group, .stories, #border-bottom{
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+
+.stories{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 12px;
+}
+
+.sidebar-box{
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+.sidebar-info{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.25 !important;
+}
+
+.time-info{
+    font-size: 12px;
+    color: gray;
+    padding-bottom: 12px;
+}
+
+#border, #border-pod{
+    padding-top: 12px;
+}
+
+#border-pod{
+    padding-bottom: 12px;
+}
+
+#more{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.featured{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid lightgray;
+    padding: 12px 16px;
 }
