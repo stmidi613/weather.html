@@ -7,7 +7,7 @@ body {
     .headers{
         width: 100vw !important;
     }
-    .container{
+    .container-group-top{
         width: 500px !important;
     }
 }
@@ -16,7 +16,7 @@ body {
     .headers{
         width: 100vw !important;
     }
-    .container{
+    .container-group-top{
         width: 95vw !important;
     }
 }
@@ -25,7 +25,7 @@ body {
     .headers{
         width: 100vw !important;
     }
-    .container{
+    .container-group-top{
         width: 95vw !important;
     }
 }
@@ -220,6 +220,7 @@ sub{
 }
 
 .categories{
+    
     margin-left: 5px;
     padding-top: 20px;
     text-decoration: none;
@@ -248,15 +249,20 @@ sub{
 }
 
 #based{
-    font-size: x-small;
+    font-size: 12px;
     line-height: 0px;
+}
+
+.flex-group{ 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sidebar{
     max-width: 300px;
     display: block;
     margin: auto;
-    justify-content: center;    
+    justify-content: center;   
 }
 
 .sidebar-boxes{
