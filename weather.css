@@ -10,14 +10,33 @@ body {
     .container-group-top{
         width: 500px !important;
     }
+    #nav-bar{
+        width: 800px;
+    }
+    #nav-bar, .flex-group{
+        display: flex !important;
+        margin: auto !important;
+        justify-items: center !important;
+    }
+    .flex-group{
+        justify-content: center !important;
+    }
 }
 
 @media (max-width:768px){
     .headers{
         width: 100vw !important;
     }
+    header{
+        justify-items: center !important;
+    }
     .container-group-top{
         width: 95vw !important;
+    }
+    .sidebar{
+        display: block !important;
+        margin: auto !important;
+        justify-items: center !important;
     }
 }
 
@@ -26,7 +45,7 @@ body {
         width: 100vw !important;
     }
     .container-group-top{
-        width: 95vw !important;
+        width: 98vw !important;
     }
 }
 
@@ -50,10 +69,8 @@ header{
 }
 
 #nav-bar{
-    position: relative;
-    left: 20px;
-    margin: 5px 0px 30px 0px;
-    padding: 3px 0px 10px 0px;
+    margin: 5px 5px 30px 0px;
+    padding: 10px 0px;
     border-bottom: 1px solid darkgray !important;
 }
 
@@ -256,13 +273,12 @@ sub{
 .flex-group{ 
     display: flex;
     flex-wrap: wrap;
+    justify-items: center;
 }
 
 .sidebar{
     max-width: 300px;
-    display: block;
-    margin: auto;
-    justify-content: center;   
+    margin: 10px;
 }
 
 .sidebar-boxes{
