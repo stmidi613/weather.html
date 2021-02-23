@@ -7,26 +7,76 @@ body {
     .headers{
         width: 100vw !important;
     }
-    .container{
+    header{
+        max-width: 850px;
+        display: block !important;
+        margin: auto !important;
+        justify-content: center !important;
+    }
+    .container-group-top{
         width: 500px !important;
+    }
+    #nav-bar{
+        width: 800px;
+    }
+    .nav-item{
+        size: 16px !important;
+    }
+    #nav-bar, .flex-group{
+        display: flex !important;
+        margin: auto !important;
+        justify-items: center !important;
+    }
+    .flex-group{
+        justify-content: center !important;
     }
 }
 
 @media (max-width:768px){
     .headers{
         width: 100vw !important;
+        /*display: flex;
+        margin: auto;
+        justify-items: flex-start !important;*/
     }
-    .container{
+    header{
+        width: 95vw;
+        display: block;
+        margin: auto;
+        justify-content: center !important;
+    }
+    .container-group-top{
         width: 95vw !important;
+    }
+    .sidebar{
+        display: block !important;
+        margin: auto !important;
+        justify-items: center !important;
+    }
+    #nav-bar{
+        margin-left: 30px !important;
+    }
+    .nav-item{
+        font-size: 12px !important;
     }
 }
 
-@media (max-width:368px){
+@media (max-width:380px){
     .headers{
         width: 100vw !important;
     }
-    .container{
-        width: 95vw !important;
+    header{
+        width: 98vw;
+        display: block;
+        margin: auto;
+        justify-content: center !important;
+        /*margin: 10px 0px;*/
+    }
+    .container-group-top{
+        width: 98vw !important;
+    }
+    #nav-bar{
+        width: 300px !important;
     }
 }
 
@@ -36,24 +86,19 @@ body {
 
 .headers{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left:auto;
-    margin-right:auto;
+    background-color: black;
+    border: 20px solid black;
+    /*width: 5000px;*/
 }
 
 header{
     color:white;
     font-size: large;
-    background-color: black;
-    display: flex;
-    border: 20px solid black;
-    width: 5000px;
+    min-width: 700px !important;
 }
 
 #nav-bar{
-    position: relative;
-    left: 20px;
-    margin: 5px 0px 30px 0px;
-    padding: 3px 0px 10px 0px;
+    padding: 10px 0px;
     border-bottom: 1px solid darkgray !important;
 }
 
@@ -65,7 +110,7 @@ header{
 
 .nav-item {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: lighter;
         display: inline;
         padding: 5px 40px 0px 0px;
@@ -90,7 +135,7 @@ li a{
     width: 25px;
     position: relative;
     left: 10px;
-    bottom: 5px;
+    top: 3px;
    }
 
    path {
@@ -220,6 +265,7 @@ sub{
 }
 
 .categories{
+    
     margin-left: 5px;
     padding-top: 20px;
     text-decoration: none;
@@ -248,15 +294,19 @@ sub{
 }
 
 #based{
-    font-size: x-small;
+    font-size: 12px;
     line-height: 0px;
+}
+
+.flex-group{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
 }
 
 .sidebar{
     max-width: 300px;
-    display: block;
-    margin: auto;
-    justify-content: center;    
+    margin: 10px;
 }
 
 .sidebar-boxes{
