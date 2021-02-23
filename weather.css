@@ -7,6 +7,12 @@ body {
     .headers{
         width: 100vw !important;
     }
+    header{
+        max-width: 850px;
+        display: block !important;
+        margin: auto !important;
+        justify-content: center !important;
+    }
     .container-group-top{
         width: 500px !important;
     }
@@ -29,9 +35,15 @@ body {
 @media (max-width:768px){
     .headers{
         width: 100vw !important;
+        /*display: flex;
+        margin: auto;
+        justify-items: flex-start !important;*/
     }
     header{
-        justify-items: center !important;
+        width: 95vw;
+        display: block;
+        margin: auto;
+        justify-content: center !important;
     }
     .container-group-top{
         width: 95vw !important;
@@ -53,6 +65,13 @@ body {
     .headers{
         width: 100vw !important;
     }
+    header{
+        width: 98vw;
+        display: block;
+        margin: auto;
+        justify-content: center !important;
+        /*margin: 10px 0px;*/
+    }
     .container-group-top{
         width: 98vw !important;
     }
@@ -67,16 +86,15 @@ body {
 
 .headers{
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    background-color: black;
+    border: 20px solid black;
+    /*width: 5000px;*/
 }
 
 header{
     color:white;
     font-size: large;
-    background-color: black;
-    border: 20px solid black;
-    width: 5000px;
-    display: flex nowrap;
+    min-width: 700px !important;
 }
 
 #nav-bar{
@@ -117,7 +135,7 @@ li a{
     width: 25px;
     position: relative;
     left: 10px;
-    bottom: 5px;
+    top: 3px;
    }
 
    path {
