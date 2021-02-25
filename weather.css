@@ -8,16 +8,16 @@ body {
         width: 100vw !important;
     }
     header{
-        max-width: 850px;
+        max-width: 900px;
         display: block !important;
         margin: auto !important;
         justify-content: center !important;
     }
     .container-group-top{
-        width: 500px !important;
+        width: 90vh !important;
     }
     #nav-bar{
-        width: 800px;
+        width: 900px;
     }
     .nav-item{
         size: 16px !important;
@@ -32,7 +32,7 @@ body {
     }
 }
 
-@media (max-width:768px){
+@media (max-width:926px){
     .headers{
         width: 100vw !important;
         /*display: flex;
@@ -46,7 +46,7 @@ body {
         justify-content: center !important;
     }
     .container-group-top{
-        width: 95vw !important;
+        width: 95vh !important;
     }
     .sidebar{
         display: block !important;
@@ -76,7 +76,7 @@ body {
         width: 98vw !important;
     }
     #nav-bar{
-        width: 300px !important;
+        width: 500px !important;
     }
 }
 
@@ -162,7 +162,7 @@ li a{
 
 input{
     position: relative;
-    left: 200px;
+    left: 350px;
 }
 
 
