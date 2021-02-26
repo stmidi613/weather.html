@@ -32,7 +32,7 @@ body {
     }
 }
 
-@media (max-width:926px){
+@media (max-width:768px){
     .headers{
         width: 100vw !important;
         /*display: flex;
@@ -46,7 +46,7 @@ body {
         justify-content: center !important;
     }
     .container-group-top{
-        width: 95vh !important;
+        width: 90vh !important;
     }
     .sidebar{
         display: block !important;
@@ -54,6 +54,8 @@ body {
         justify-items: center !important;
     }
     #nav-bar{
+        max-width: 95vw !important;
+        max-width: 900px;
         margin-left: 30px !important;
     }
     .nav-item{
@@ -76,7 +78,8 @@ body {
         width: 98vw !important;
     }
     #nav-bar{
-        width: 500px !important;
+        max-width: 90vw !important;
+        margin-left: 30px;
     }
 }
 
