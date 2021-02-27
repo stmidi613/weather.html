@@ -17,17 +17,17 @@ body {
         width: 90vh !important;
     }
     #nav-bar{
-        width: 900px;
+        margin-left: 30px !important;
+        width: 130vh !important;
     }
     .nav-item{
         size: 16px !important;
+
     }
     #nav-bar, .flex-group{
-        display: flex !important;
+        display: block inline !important;
         margin: auto !important;
         justify-items: center !important;
-    }
-    .flex-group{
         justify-content: center !important;
     }
 }
@@ -35,9 +35,6 @@ body {
 @media (max-width:768px){
     .headers{
         width: 100vw !important;
-        /*display: flex;
-        margin: auto;
-        justify-items: flex-start !important;*/
     }
     header{
         width: 95vw;
@@ -46,7 +43,7 @@ body {
         justify-content: center !important;
     }
     .container-group-top{
-        width: 90vh !important;
+        width: 98vh !important;
     }
     .sidebar{
         display: block !important;
@@ -54,32 +51,12 @@ body {
         justify-items: center !important;
     }
     #nav-bar{
-        max-width: 95vw !important;
-        max-width: 900px;
+        display: block inline !important;
+        justify-content: center;
         margin-left: 30px !important;
     }
     .nav-item{
         font-size: 12px !important;
-    }
-}
-
-@media (max-width:380px){
-    .headers{
-        width: 100vw !important;
-    }
-    header{
-        width: 98vw;
-        display: block;
-        margin: auto;
-        justify-content: center !important;
-        /*margin: 10px 0px;*/
-    }
-    .container-group-top{
-        width: 98vw !important;
-    }
-    #nav-bar{
-        max-width: 90vw !important;
-        margin-left: 30px;
     }
 }
 
@@ -91,7 +68,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     border: 20px solid black;
-    /*width: 5000px;*/
 }
 
 header{
@@ -218,7 +194,7 @@ input{
 
 .current #details{
     position: relative;
-    bottom: 40px;
+    left: 250px;
     text-align: right;
 }
 
@@ -229,11 +205,6 @@ sub{
     right: 25px;
     bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.description{
-    display: flex;
-
 }
 
 .minute{
