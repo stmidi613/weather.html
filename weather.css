@@ -14,11 +14,11 @@ body {
         justify-content: center !important;
     }
     .container-group-top{
-        width: 90vh !important;
+        width: clamp(500px, 50%, 650px);
     }
     #nav-bar{
         margin-left: 30px !important;
-        width: 130vh !important;
+        width: clamp(750px, 75%, 950px);
     }
     .nav-item{
         size: 16px !important;
@@ -43,7 +43,7 @@ body {
         justify-content: center !important;
     }
     .container-group-top{
-        width: 98vh !important;
+        width: 100vh !important;
     }
     .sidebar{
         display: block !important;
@@ -54,6 +54,7 @@ body {
         display: block inline !important;
         justify-content: center;
         margin-left: 30px !important;
+        width: clamp(500px, 95vh, 950px);
     }
     .nav-item{
         font-size: 12px !important;
